@@ -14,9 +14,24 @@ body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+div {
+  display: block;
+}
+
+/* html {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+} */
+
+h2 {
   font-size: inherit;
   font-weight: inherit;
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+
 }
 
 * {
@@ -36,17 +51,45 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
 }
 
+ul {
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 0;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+
 #main-body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   border-right: 0 solid #fff;
-    border-right-width: 0px;
-    border-right-style: solid;
-    border-right-color: rgb(255, 255, 255);
-    position: relative;
-    background-color: 100%;
-    word-wrap: break-word;
+  border-right-width: 0px;
+  border-right-style: solid;
+  border-right-color: rgb(255, 255, 255);
+  position: relative;
+  background-color: var(--page--bg-color);
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .blog-cover-image {
@@ -58,20 +101,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-listing-card {
   position: relative;
-  padding: 30px;
+    padding: 30px;
     padding-top: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
-  color: #b7b7b7;
-  border-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  z-index: 10;
-  backdrop-filter: blur(30px);
-  background-color: rgba(50,50,50,.5);
+    color: #b7b7b7;
+    border-radius: 10px;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: rgba(50,50,50,.5);
 }
 
 .blog-listing {
@@ -79,18 +119,19 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   min-height: 75vh;
   align-items: center;
+  justify-content: flex-end;
 }
 
-.blog-listing-card .card-tags {
+.card-tags {
   margin-bottom: 20px;
 }
 
-.blog-listing-card .card-content {
+.card-content {
   position: relative;
   z-index: 15;
 }
 
-.blog-listing-card .card-header {
+.card-header {
   font-size: 1.8rem;
   color:#fff;
   text-transform: uppercase;
@@ -207,13 +248,12 @@ a {
   color: rgba(255,255,255,var(--tw-text-opacity))
 }
 @media (min-width:768px){
-  .blog-listing:nth-child(odd){
-    justify-content: flex-start;
-    margin-left: 5%;
+  .blog-listing:nth-child(2n){
+    justify-content: flex-end;
+    margin-right: 5%;
   }
   .blog-listing-card {
     max-width: 60%;
-    margin-left: 5%;
   }
 }
 
@@ -246,6 +286,12 @@ a {
   }
   .lgr\:items-center {
     align-items: center;
+  }
+}
+
+@media (min-width: 1200px){
+  .blog-listing-card {
+      max-width: 40%;
   }
 }
 
@@ -383,4 +429,38 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+:root {
+  --text-body-color: #333333;
+  --text-body-color-alt: #a79f9f;
+  --text-link-color: #a79f9f;
+  --text-active-link-color: #c5d2da;
+  --off-black: rgba(0, 0, 0, 0.87);
+  --accessibility-border-color: #fff;
+  --btn-primary-color: #D91C3C;
+  --btn-secondary-color: rgba(0, 0, 0, 0.87);
+  --gradient-dark: linear-gradient(180deg, #000 20%, #393939 120%);
+  --color-border-form: white;
+  --header-bg-color: #ebebeb;
+  --header-text-color: #ebebeb;
+  --sticky-header-bg-color: #ffffff;
+  --sticky-header-text-color: #2d2d2d;
+  --sticky-header-border-color: #c6c6c6;
+  --logo-color: #282C2E;
+  --logo-hover-color: #554B60;
+  --footer-bg-color: #000000;
+  --footer-title-text-color: #ebebeb;
+  --footer-text-color: #8d8d8d;
+  --page-bg-color: #000000;
+  --sale-badge-color: #f26c4f;
+  --sale-label-color: #fbfbfb;
+  --sold-out-badge-color: #000000;
+  --atc-bg-color: #39863a;
+  --atc-bg-hover-color: #c8d2c9;
+  --atc-text-color: #fff;
+  --body-font-stack: 'Roboto', sans-serif;
+  --body-font-weight: 400;
+  --body-font-style: normal;
+  --base-font-size: 16px;
 }
