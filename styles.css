@@ -23,11 +23,16 @@ div {
   line-height: 1.5;
 } */
 
+.h1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
 h2 {
   font-size: inherit;
   font-weight: inherit;
   margin: 0;
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 0px;
@@ -128,7 +133,7 @@ img {
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   background-color: rgba(50, 50, 50, 0.5);
-  margin-right: 5%;
+  margin-left: 5%;
   max-width: 60%;
   font-size: 1.8em;
 }
@@ -138,7 +143,7 @@ img {
   display: flex;
   min-height: 75vh;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .card-tags {
@@ -187,6 +192,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .card-details {
@@ -293,6 +299,14 @@ a {
 }
 
 @media (min-width: 1025px) {
+  .lgr\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .lgr\:py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .lgr\:flex-grow {
     flex-grow: 1;
   }
@@ -308,8 +322,6 @@ a {
   .lgr\:justify-end {
     justify-content: flex-end;
   }
-}
-@media (min-width: 1025px) {
   .lgr\:flex {
     display: flex;
   }
