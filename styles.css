@@ -144,6 +144,21 @@ img {
   word-wrap: break-word;
 }
 
+.about-float {
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 200;
+  margin-top: 20px;
+}
+
 .banner-section {
   position: relative;
   display: flex;
@@ -365,6 +380,33 @@ a {
   cursor: pointer;
 }
 
+.mainteas1 {
+  font-family: Roboto;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 1em;
+  color: white;
+  margin-top: 0.05em;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 30px rgb(0 0 0 / 50%);
+}
+
+.mainteas2 {
+  font-family: Roboto;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 1em;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 30px rgba(0 0 0 / 50%);
+}
+
 .account-icon {
   display: block;
   vertical-align: middle;
@@ -415,6 +457,9 @@ a {
   color: rgba(209, 213, 219, var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
+  .mainteas1 {
+    font-size: 62px;
+  }
   .blog-listing:nth-child(2n) {
     justify-content: flex-end;
     margin-right: 5%;
@@ -424,6 +469,18 @@ a {
   }
   .md\:text-right {
     text-align: right;
+  }
+  .mainteas2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mainteas1 {
+    font-size: 72px;
+  }
+  .mainteas2 {
+    font-size: 36px;
   }
 }
 
@@ -473,6 +530,12 @@ a {
     max-width: 40%;
     margin-left: 5%;
     margin-bottom: 5%;
+  }
+  .mainteas1 {
+    font-size: 72px;
+  }
+  .mainteas2 {
+    font-size: 36px;
   }
 }
 
@@ -665,6 +728,35 @@ a {
 
 .relative {
   position: relative;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+.flexvideo {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.flexvideo video:first-of-type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: 100;
+  overflow: hidden;
+  max-width: inherit !important;
 }
 
 .flex {
