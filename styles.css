@@ -144,6 +144,19 @@ img {
   word-wrap: break-word;
 }
 
+.abus {
+  font-family: Roboto;
+  font-size:26px;
+  color: white;
+  text-align: left;
+  letter-spacing: 4px;
+  margin-left:5%;
+  margin-right:5%;
+  padding-bottom:40px;
+  text-transform: uppercase;
+  color: black;
+  }
+
 .about-float {
   width: 100vw;
   text-align: center;
@@ -456,7 +469,23 @@ a {
   --tw-text-opacity: 1;
   color: rgba(209, 213, 219, var(--tw-text-opacity));
 }
+
+@media(min-width:0px) {
+  .abus 
+  {
+  font-size:26px;
+  text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
+
+  .abus 
+  {
+  font-size:32px;
+  text-align: left;
+  }
+
   .mainteas1 {
     font-size: 62px;
   }
@@ -476,6 +505,12 @@ a {
 }
 
 @media (min-width: 992px) {
+
+  .abus 
+  {
+  font-size:42px;
+  text-align: left;
+  }
   .mainteas1 {
     font-size: 72px;
   }
@@ -523,6 +558,12 @@ a {
 }
 
 @media (min-width: 1200px) {
+
+  .abus
+  {
+  font-size:48px;
+  text-align: left;
+  }
   .blog-listing-card {
     max-width: 40%;
   }
@@ -569,6 +610,20 @@ a {
     var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
 }
 
+.shogun-image {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: inherit;
+  max-height: inherit;
+  display: inline !important;
+  border: 0;
+  vertical-align: middle;
+}
+
+.shogun-position-container {
+  position: relative;
+}
+
 .shogun-root {
   position: relative;
   isolation: isolate;
@@ -594,11 +649,6 @@ a {
   overflow-wrap: break-word;
 }
 
-.shg-box-verticle-align-wrapper {
-  display: flex;
-  width: 100%;
-}
-
 .shg-box {
   position: relative;
   display: flex;
@@ -606,6 +656,24 @@ a {
   flex-direction: column;
   flex: 1 1 auto;
   justify-content: center;
+}
+
+.shg-row {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: inherit;
+  max-height: inherit;
+  justify-content: space-between;
+}
+
+#w-we-are-1 {
+  padding: 120px;
+  padding-bottom: 120px;
+  background-color: #fff;
+}
+
+.shg-c-lg-6 {
+  position: relative;
 }
 
 .shg-c {
@@ -647,16 +715,45 @@ a {
   pointer-events: none;
 }
 
+.shg-box-vertical-align-wrapper {
+  display: flex;
+  width: 100%;
+}
+
 .shg-box-content {
   z-index: 4;
   position: relative;
   min-height: 1px;
 }
 
+#s-0e8c571a-ea31-4205-74b121ac8798 {
+  justify-content: center;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#s-0681fffc-c4eb-45c7-9049-640597f4c6f7 {
+  justify-content: center;
+  min-height: 50px;
+}
+
+#s-95dda46a-c57d-41d6-ae54-3b6c931b095f {
+  text-align: center;
+}
+
 #s-a6794277-9286-47d5-87f9-59c2d81af13b {
   justify-content: center;
   min-height: 50px;
   background-color: #f9f9f9;
+}
+
+.s-b0d6c0eb-f95e-4cb4-a76e-f44eb2fae50d {
+  text-align: center;
+}
+
+.s-b0c7a663-e1fb-4882-a3f6-89ab255ce8c {
+  justify-content: center;
+  min-height: 50px;
 }
 
 #s-be9f0132-1965-4f43-a4bc-ba409bbadafa {
@@ -682,10 +779,33 @@ a {
   margin-bottom: 80px;
 }
 
+#s-b3c8b277-04b4-4b9a-8215-b48dc48afd13 {
+  margin-left: 0px;
+  margin-right: auto;
+  padding-left: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 640px;
+}
+
 #s-bd4949f5-a924-4e90-834c-9e4939ff2d1f {
   padding-top: 0px;
   padding-bottom: 0px;
   text-align: center;
+}
+
+#s-ccf8aa37-0e81-4f95-831b-ef45a0c0b9d6{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #fff;
+}
+
+#s-d5552372-fc45-402b-a6c5-fc26f0b6ab40 {
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 50px;
+  max-width: 100%;
 }
 
 #s-f0585317-4f58-4846-b08f-ad2da3fd55a9 {
@@ -728,6 +848,36 @@ a {
 
 .relative {
   position: relative;
+}
+
+.cntvidbut {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.cnthdrgradient {
+  background: linear-gradient(135deg),
+  rgba(31, 31, 31, 1) 10%,
+  rgba(71, 71, 71, 1)37%,
+  rgba(28, 28, 28, 1)50%,
+  rgba(29, 29, 29, 1)67%,
+  rgba(36, 36, 36, 1)79%,
+  rgba(20, 20, 20, 1)90%;
+  opacity: 1;
+  background-repeat: no-repeat;
+}
+
+button {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: botton;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
 }
 
 video {
