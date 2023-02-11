@@ -14,6 +14,11 @@ body {
   height: 100%;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity))
+}
+
 p {
   margin: 0;
 }
@@ -107,7 +112,7 @@ li {
 }
 
 img {
-  max-width: 100%;
+  height: auto;
   display: block;
   vertical-align: middle;
 }
@@ -155,6 +160,16 @@ img {
   padding-bottom:40px;
   text-transform: uppercase;
   color: black;
+  }
+
+  .my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
 .about-float {
@@ -333,6 +348,11 @@ img {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.5rem;
+  padding-right: 1.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -345,6 +365,11 @@ img {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-8 {
+  padding: 2rem;
+  padding-bottom: 2rem;
 }
 
 .outline-none {
@@ -456,8 +481,17 @@ a {
   justify-content: space-around;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .desktop-search {
   margin-left: -3px !important;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-white {
@@ -504,6 +538,38 @@ a {
   }
 }
 
+@media (min-width: 976px){
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom:2.5rem;
+  }
+  .lg\:w-1\/6 {
+    width: 16.6666667%;
+  }
+  .lg\:block {
+    display: block;
+  }
+  .lg\:pl-6 {
+    padding-left: 1.5rem;
+  }
+  .lg\:max-w-screen-md {
+    max-width:768px;
+  }
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+  .lg\:mt-0 {
+    margin-top: 0;
+  }
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
 @media (min-width: 992px) {
 
   .abus 
@@ -516,6 +582,12 @@ a {
   }
   .mainteas2 {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .shg-c {
+    background-attachment: scroll !important;
   }
 }
 
@@ -580,12 +652,28 @@ a {
   }
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-x-3 {
+  column-gap: 0.75rem;
+}
+
 .items-center {
   align-items: center;
 }
 
 .w-5 {
   width: 1.25rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-gray-200 {
@@ -608,6 +696,11 @@ a {
 .shadow-sm {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
     var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+
+.shogun-lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
 }
 
 .shogun-image {
@@ -718,12 +811,28 @@ a {
 .shg-box-vertical-align-wrapper {
   display: flex;
   width: 100%;
+  background: black;
 }
 
 .shg-box-content {
   z-index: 4;
   position: relative;
   min-height: 1px;
+}
+
+#s-e2a6546b-0559-4869-9386-7a294e9eef00 {
+  margin: auto;
+  margin-bottom: 0px;
+  margin-right: auto;
+  padding-top: 0px;
+  max-width: 600px;
+}
+
+#s-d389875b-eb67-4e2c-9a2f-3241a2fee40e {
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  min-height: 50px;
 }
 
 #s-0e8c571a-ea31-4205-74b121ac8798 {
@@ -741,17 +850,23 @@ a {
   text-align: center;
 }
 
+#s-aec74b32-7cd6-4ef7-8b1f-8db651514ae5 {
+  justify-content: center;
+  min-height: 85px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
 #s-a6794277-9286-47d5-87f9-59c2d81af13b {
   justify-content: center;
   min-height: 50px;
   background-color: #f9f9f9;
 }
 
-.s-b0d6c0eb-f95e-4cb4-a76e-f44eb2fae50d {
+#s-b0d6c0eb-f95e-4cb4-a76e-f44eb2fae50d {
   text-align: center;
 }
 
-.s-b0c7a663-e1fb-4882-a3f6-89ab255ce8c {
+#s-b0c7a663-e1fb-4882-a3f6-89ab255ce8c {
   justify-content: center;
   min-height: 50px;
 }
@@ -887,6 +1002,10 @@ video {
   vertical-align: middle;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flexvideo {
   width: 100%;
   height: 80vh;
@@ -917,6 +1036,10 @@ video {
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-1 {
   flex: 1 1 0%;
   flex-grow: 1;
@@ -927,6 +1050,11 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
 /* Header styles */
@@ -994,6 +1122,11 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+.footer-newsletter {
+  border-color: #707070;
+}
+
 footer a {
   color: #fff;
 }
